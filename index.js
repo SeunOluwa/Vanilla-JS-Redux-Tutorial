@@ -10,11 +10,11 @@ const applyMiddleware = redux.applyMiddleware;
 const reduxLogger = require('redux-logger');
 const logger = reduxLogger.createLogger();
 
-// action type
+// action types
 const BUY_CAKE = 'BUY_CAKE';
 const BUY_ICECREAM = 'BUY_ICECREAM';
 
-// action creator
+// action creators
 function buyCake() {
     return {
         type: BUY_CAKE,
@@ -28,7 +28,7 @@ function buyIceCream() {
     }
 }
 
-// reducer
+// state
 // const initialState = {
 //     numOfCakes: 10,
 //     numOfIceCreams: 20
@@ -42,6 +42,7 @@ const initialIceCreamState = {
     numOfIceCreams: 20
 };
 
+// reducers
 // const reducer = (state = initialState, action) => {
 //     switch(action.type) {
 //         case BUY_CAKE:
