@@ -50,15 +50,13 @@ const initialIceCreamState = {
 //                 ...state,
 //                 numOfCakes: state.numOfCakes - 1
 //             };
-
 //         case BUY_ICECREAM:
 //             return {
 //                 ...state,
 //                 numOfIceCreams: state.numOfIceCreams - 1
 //             };
-
-//             default:
-//                 return state;
+//         default:
+//             return state;
 //     };
 // };
 
@@ -69,9 +67,8 @@ const cakeReducer = (state = initialCakeState, action) => {
                 ...state,
                 numOfCakes: state.numOfCakes - 1
             };
-
-            default:
-                return state;
+        default:
+            return state;
     };
 };
 
@@ -82,9 +79,8 @@ const iceCreamReducer = (state = initialIceCreamState, action) => {
                 ...state,
                 numOfIceCreams: state.numOfIceCreams - 1
             };
-
-            default:
-                return state;
+        default:
+            return state;
     };
 };
 
